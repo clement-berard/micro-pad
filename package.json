@@ -2,25 +2,53 @@
   "name": "micro-pad",
   "version": "1.0.0",
   "type": "module",
+  "bin": {
+    "micro-pad": "dist/server.js"
+  },
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsc",
-    "start": "tsx src/index.ts",
+    "build": "tsx build.ts",
+    "start": "node dist/server.js",
     "format": "pnpm biome format",
     "lint": "pnpm biome lint",
     "lint:check": "pnpm biome check"
   },
   "dependencies": {
-    "@hono/node-server": "^1.4.0",
-    "hono": "^4.0.0",
     "ws": "^8.16.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@hono/node-server": "^1.4.0",
+    "@release-it/conventional-changelog": "9.0.3",
     "@types/node": "^20.11.0",
     "@types/ws": "^8.5.10",
+    "esbuild": "0.24.0",
+    "esbuild-node-externals": "1.15.0",
+    "hono": "^4.0.0",
+    "release-it": "17.10.0",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "micro-pad",
+    "pad",
+    "collaborative",
+    "editor"
+  ],
+  "author": "Clément BERARD <contact@berard.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clement-berard/micro-pad.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clement-berard/micro-pad/issues"
+  },
+  "homepage": "https://github.com/clement-berard/micro-pad",
+  "files": [
+    "dist"
+  ]
 }
-
