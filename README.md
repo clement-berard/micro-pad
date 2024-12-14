@@ -42,8 +42,8 @@ version: '3'
 
 services:
   pad:
-    image: node:20-slim
-    command: sh -c "npm install -g micro-pad && micro-pad"
+    image: node:20-alpine
+    command: sh -c "npm i -g micro-pad && micro-pad"
     ports:
       - "3000:3000"
 ```
