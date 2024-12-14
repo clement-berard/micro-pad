@@ -11,7 +11,9 @@
     "start": "node dist/server.js",
     "format": "pnpm biome format",
     "lint": "pnpm biome lint",
-    "lint:check": "pnpm biome check"
+    "lint:check": "pnpm biome check",
+    "release": "pnpm release-it",
+    "release:test": "pnpm release-it --dry-run"
   },
   "dependencies": {
     "ws": "^8.16.0"
