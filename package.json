@@ -51,6 +51,7 @@
   },
   "homepage": "https://github.com/clement-berard/micro-pad",
   "files": [
-    "dist"
+    "dist",
+    "docs"
   ]
 }
