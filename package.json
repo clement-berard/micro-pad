@@ -1,0 +1,26 @@
+{
+  "name": "micro-pad",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "format": "pnpm biome format",
+    "lint": "pnpm biome lint",
+    "lint:check": "pnpm biome check"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.4.0",
+    "hono": "^4.0.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^20.11.0",
+    "@types/ws": "^8.5.10",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
+
