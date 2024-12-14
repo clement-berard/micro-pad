@@ -2,7 +2,7 @@
 
 A minimalist real-time collaborative notepad with built-in dark mode.
 
-![screenshot.jpg](docs/screenshot.jpg)
+![screenshot.jpg](https://raw.githubusercontent.com/clement-berard/micro-pad/refs/heads/main/docs/screenshot.jpg)
 
 ## Features
 - Real-time collaboration: Multiple users can edit the same pad simultaneously
