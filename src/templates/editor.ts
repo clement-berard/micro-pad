@@ -1,8 +1,8 @@
-export const html = `
+export const html = (padId: string) => `
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hono Pad</title>
+    <title>Pad: ${padId}</title>
     <style>
         body, html {
             margin: 0;
@@ -26,7 +26,7 @@ export const html = `
 <body>
     <textarea id="editor"></textarea>
     <script>
-        const padId = window.location.pathname.slice(1);
+        const padId = "${padId}";
         const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
         const ws = new WebSocket(\`\${wsProtocol}//\${window.location.host}\`);
         const editor = document.getElementById('editor');
@@ -59,7 +59,6 @@ export const html = `
             updateTimeout = setTimeout(sendUpdate, 50);
         });
 
-        // Ajout d'écouteurs pour d'autres événements qui peuvent modifier le contenu
         editor.addEventListener('cut', () => {
             if (ignoreChange) return;
             setTimeout(sendUpdate, 0);
