@@ -26,7 +26,7 @@ npm install -g micro-pad
 micro-pad
 ```
 
-Server will start on port 3000 by default.
+Server will start on port 3000 by default. (override by `env.PORT`)
 
 ### Access a pad
 
@@ -42,8 +42,8 @@ version: '3'
 
 services:
   pad:
-    image: node:20-alpine
-    command: sh -c "npm i -g micro-pad && micro-pad"
+    image: node:22-alpine
+    command: sh -c "npx micro-pad"
     ports:
       - "3000:3000"
 ```
