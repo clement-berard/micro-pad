@@ -24,7 +24,7 @@
     "@release-it/conventional-changelog": "9.0.3",
     "@types/node": "^20.11.0",
     "@types/ws": "^8.5.10",
-    "esbuild": "0.24.0",
+    "esbuild": "0.25.0",
     "esbuild-node-externals": "1.15.0",
     "hono": "^4.0.0",
     "release-it": "17.10.0",
