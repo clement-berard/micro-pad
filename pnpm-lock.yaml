@@ -17,7 +17,7 @@ importers:
         version: 1.9.4
       '@hono/node-server':
         specifier: ^1.14.4
-        version: 1.14.4(hono@4.8.2)
+        version: 1.14.4(hono@4.10.2)
       '@release-it/conventional-changelog':
         specifier: 10.0.1
         version: 10.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.1.0)(release-it@19.0.3(@types/node@24.0.3))
@@ -34,8 +34,8 @@ importers:
         specifier: 1.18.0
         version: 1.18.0(esbuild@0.25.5)
       hono:
-        specifier: ^4.8.2
-        version: 4.8.2
+        specifier: ^4.10.2
+        version: 4.10.2
       release-it:
         specifier: 19.0.3
         version: 19.0.3(@types/node@24.0.3)
@@ -826,8 +826,8 @@ packages:
     engines: {node: '>=0.4.7'}
     hasBin: true
 
-  hono@4.8.2:
-    resolution: {integrity: sha512-hM+1RIn9PK1I6SiTNS6/y7O1mvg88awYLFEuEtoiMtRyT3SD2iu9pSFgbBXT3b1Ua4IwzvSTLvwO0SEhDxCi4w==}
+  hono@4.10.2:
+    resolution: {integrity: sha512-p6fyzl+mQo6uhESLxbF5WlBOAJMDh36PljwlKtP5V1v09NxlqGru3ShK+4wKhSuhuYf8qxMmrivHOa/M7q0sMg==}
     engines: {node: '>=16.9.0'}
 
   hosted-git-info@7.0.2:
@@ -1490,9 +1490,9 @@ snapshots:
   '@esbuild/win32-x64@0.25.5':
     optional: true
 
-  '@hono/node-server@1.14.4(hono@4.8.2)':
+  '@hono/node-server@1.14.4(hono@4.10.2)':
     dependencies:
-      hono: 4.8.2
+      hono: 4.10.2
 
   '@hutson/parse-repository-url@5.0.0': {}
 
@@ -2074,7 +2074,7 @@ snapshots:
     optionalDependencies:
       uglify-js: 3.19.3
 
-  hono@4.8.2: {}
+  hono@4.10.2: {}
 
   hosted-git-info@7.0.2:
     dependencies:

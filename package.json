@@ -29,7 +29,7 @@
     "@types/ws": "^8.18.1",
     "esbuild": "0.25.5",
     "esbuild-node-externals": "1.18.0",
-    "hono": "^4.8.2",
+    "hono": "^4.10.2",
     "release-it": "19.0.3",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
