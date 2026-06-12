@@ -19,20 +19,20 @@
     "release:test": "pnpm release-it --dry-run"
   },
   "dependencies": {
-    "ws": "^8.18.2"
+    "ws": "^8.21.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@hono/node-server": "^1.14.4",
-    "@release-it/conventional-changelog": "10.0.1",
-    "@types/node": "^24.0.3",
+    "@biomejs/biome": "2.5.0",
+    "@hono/node-server": "^2.0.4",
+    "@release-it/conventional-changelog": "11.0.1",
+    "@types/node": "^25.9.3",
     "@types/ws": "^8.18.1",
-    "esbuild": "0.25.5",
-    "esbuild-node-externals": "1.18.0",
-    "hono": "^4.8.2",
-    "release-it": "19.0.3",
-    "tsx": "^4.20.3",
-    "typescript": "^5.8.3"
+    "esbuild": "0.28.0",
+    "esbuild-node-externals": "1.22.0",
+    "hono": "4.12.25",
+    "release-it": "20.2.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
   },
   "publishConfig": {
     "access": "public"
